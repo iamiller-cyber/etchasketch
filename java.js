@@ -9,7 +9,7 @@ for (let i = 1; i <= 256; i++) {
 
 let grid = document.querySelectorAll('.grid')
 Array.from(grid).forEach(item => item.addEventListener('mouseenter', function(e) {
-    e.target.setAttribute('class', 'sketch')
+    e.target.classList.add('sketch')
 }))
 
 button.addEventListener('click', newGrid)
@@ -17,6 +17,8 @@ button.addEventListener('click', newGrid)
 function newGrid() {
     let grid = document.querySelectorAll('.grid')
     Array.from(grid).forEach(grid => container.removeChild(grid))
+
+}
 /*   let size = prompt('How big you want this grid? Max 100 pls')
     if (isNaN(size)) {
         alert('Has to be a number!')

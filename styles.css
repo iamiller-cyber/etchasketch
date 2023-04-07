@@ -22,12 +22,7 @@ body {
 }
 
 .sketch {
-    width: 30px;
-    height: 30px;
-    box-sizing: border-box;
     background-color: white;
-    flex-wrap: wrap;
-    flex: auto;
 }
 
 button {
